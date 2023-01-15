@@ -13,6 +13,9 @@
     <li>Django to serve WeatherAPI, Raspberry Pi data as JSON objects, insta-read of moisture sensor as float value</li>
 </ul>
 
+<h2>Structure:</h2>
+<img src="Moisture_Sensor_Diagram.png" alt="Moisture_Sensor_Diagram">
+
 <h2>Steps:</h2>
 <ol>
 <li>Install raspian on raspberry pi</li>
