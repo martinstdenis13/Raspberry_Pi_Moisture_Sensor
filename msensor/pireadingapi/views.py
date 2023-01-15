@@ -11,7 +11,7 @@ def index(response):
     return HttpResponse("pireadingAPI")
 
 def pireadingall(response):
-    data = PiReading.objects.all()
+    data = PiReading.objects.all().order_by('-pi_reading_id')
     data = serializers.serialize('json', data)
     return HttpResponse(data)
 
