@@ -12,8 +12,8 @@ def index(response):
 
 def pireadingall(response):
     data = PiReading.objects.all().order_by('-pi_reading_id')
-    data = serializers.serialize('json', data)
-    return HttpResponse(data)
+    allpidata = serializers.serialize('json', data)
+    return HttpResponse(allpidata)
 
 def pireadinglimit(response, limit):
     pirlimit = PiReading.objects.all().order_by('-pi_reading_id')[:limit]
